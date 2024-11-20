@@ -3,7 +3,7 @@ const User = require('../models/user');
 const userMiddleware = require('../middleware/user-middleware')
 
 // Get all the todo task using get method
-const getAllTodo = async (req, res) =>{
+const getAllTodo = async (req, res) =>{ 
     const allTodo = await ToDo.find({});
     try{
         if(allTodo.length > 0){
